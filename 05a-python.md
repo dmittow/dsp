@@ -12,7 +12,9 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and tuples are both sequential and ordered data structures which contain multiple items of any data type. Lists have variable lenght and support operations such as insert, delete, append, and extend. Tuples are immutable, meaning they have a fixed length and for the most part do not support updates. The only slight exception to this is in the case of a tuple made of lists, in which the component lists can be modified but not the tuple itself.
+
+>>Tuples can be used as keys in a dictionary while lists cannot. This is mostly because of the mutability of lists. Dictionaries are constructed by hashing the key of an item, and then inserting the key:value pair at the address indicated by the hash function. Since lists can be updated, calculating a consistent hash value is almost impossible. Any updates to the values in a list used as keys would change the hash value, and therefore change the place where the (key,value) pair would need to be stored. Since tuples stay constant once initialized, the hash values also stay content and thus they are a good candidate for use as a key in a dictionary.
 
 ---
 
@@ -20,7 +22,17 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists are ordered, and allow duplicates while sets do not. Sets are best for operations like 'IN', 'MINUS', and 'XOR'.
+```python
+foods = {'cheese','chocolate','cookies','lobster'}
+
+def do_i_like(s):
+    like = 'no'
+    if s in foods:
+        like = 'yes'
+    return like
+```    
+Adding items to sets is fast, and so is checking membership. Finding the index of an element in a SET is meaningless since the values are not ordered. Finding the index of a value in a list takes linear time, since you have to iterate through the items in a list checking equality until you find the desired value.
 
 ---
 
