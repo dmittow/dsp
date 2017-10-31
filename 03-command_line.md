@@ -34,14 +34,25 @@ cp text.txt /home/newdir/test.txt
 
 What do the following commands do:  
 `ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+list files
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls -a`  
+list all files (including hidden files)
+
+`ls -l`  
+list long format (has other info like update time, creator name, and permissions)
+
+`ls -lh`  
+list long format with readable file sizes
+
+`ls -lah`  
+list long format all files with readable file sizes
+
+`ls -t`  
+list sorted by datetime
+
+`ls -Glp`  
+list with long format minus username, show directories with slash 
 
 ---
 
@@ -57,7 +68,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+xargs executes a given command on any number of inputs from standard input. The command is passed as the argument of xargs, and it allows you to pipe data streams to a command.
 
  
 
