@@ -59,7 +59,14 @@ mx = lambda x,y: x if x>y else y
 >>>mx(3,5)
 5
 ```
+>>Here is an example of code to sort a list of drinks by the length of their names:
 
+```python
+>>>drinks = ['coffee','lemonade','wine','beer','tea']
+>>>drinks.sort(key=lambda s:len(s))
+>>>drinks
+['tea', 'wine', 'beer', 'coffee', 'lemonade']
+```
 ---
 
 ### Q4. List Comprehension, Map &amp; Filter
