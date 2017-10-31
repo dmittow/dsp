@@ -72,9 +72,14 @@ mx = lambda x,y: x if x>y else y
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are a shorthand way of applying simple operations to all the items in a list, and which returns another list as a result.
 
----
+```python
+>>>menu = ['wine','lemonade','orange juice','water']
+>>>prefs = [do_i_like(d,drinks) for d in menu]
+>>>print(prefs)
+['yes', 'yes', 'no', 'no']
+```
 
 ### Complete the following problems by editing the files below:
 
