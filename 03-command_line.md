@@ -60,7 +60,11 @@ list with long format minus username, show directories with slash
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -u order files by access timestamp
+> > ls -d list only directories
+> > ls -f interpret names as directories, not files
+> > ls -q display files with ? for special characters
+> > ls -C display files in columnar format
 
 ---
 
