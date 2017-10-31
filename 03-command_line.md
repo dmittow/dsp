@@ -19,14 +19,14 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-pwd
-mkdir
-rmdir
-touch test.txt
-rm test.txt
-mv test.txt test01.txt
-ls -a
-cp text.txt /home/newdir/test.txt
+pwd  
+mkdir  
+rmdir  
+touch test.txt  
+rm test.txt  
+mv test.txt test01.txt  
+ls -a  
+cp text.txt /home/newdir/test.txt  
 
 ---
 
@@ -60,11 +60,11 @@ list with long format minus username, show directories with slash
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > ls -u order files by access timestamp
-> > ls -d list only directories
-> > ls -f interpret names as directories, not files
-> > ls -q display files with ? for special characters
-> > ls -C display files in columnar format
+> > ls -u order files by access timestamp  
+> > ls -d list only directories  
+> > ls -f interpret names as directories, not files  
+> > ls -q display files with ? for special characters  
+> > ls -C display files in columnar format  
 
 ---
 
