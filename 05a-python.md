@@ -52,7 +52,13 @@ m
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lambda is a keyword that can help simplify the code for defining a function. Instead of using the keywords *def* and *return*, the same functionality can be accomplished with one line.
+
+```python
+mx = lambda x,y: x if x>y else y
+>>>mx(3,5)
+5
+```
 
 ---
 
