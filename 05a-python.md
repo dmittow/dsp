@@ -37,9 +37,9 @@ yes
 >>>do_i_like('mushrooms')
 no
 ```    
->>>Adding items to sets is fast, and so is checking membership. Finding the index of an element in a SET is meaningless since the values are not ordered. 
+>>Adding items to sets is fast, and so is checking membership. Finding the index of an element in a SET is meaningless since the values are not ordered. 
 
-Finding the index of a value in a list takes linear time, since you have to iterate through the items in a list checking equality until you find the desired value. They are best used when the order of values is important. For example, strings are internally treated like lists of characters
+>>Finding the index of a value in a list takes linear time, since you have to iterate through the items in a list checking equality until you find the desired value. They are best used when the order of values is important. For example, strings are internally treated like lists of characters
 ```python
 >>>x = 'computer'
 >>>x[2]
