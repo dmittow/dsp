@@ -63,8 +63,7 @@ mx = lambda x,y: x if x>y else y
 
 ```python
 >>>drinks = ['coffee','lemonade','wine','beer','tea']
->>>drinks.sort(key=lambda s:len(s))
->>>drinks
+>>>print(sorted(drinks, key=lambda s:len(s)))
 ['tea', 'wine', 'beer', 'coffee', 'lemonade']
 ```
 ---
