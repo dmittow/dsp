@@ -96,6 +96,20 @@ print([d for d in menu if (d in drinks_i_like)])
 ```python
 print(list(filter(lambda d: d in drinks_i_like, menu)))
 ```
+>>Here is an example of a dictionary comprehension
+```python
+food_menu = ['cheese','chocolate','cookies','lobster']
+drink_menu = ['wine','water','milk','lemonade']
+drink_recs = {f: d for (f,d) in zip(food_menu,drink_menu)}
+print(drink_recs)
+
+{'cheese': 'wine', 'chocolate': 'water', 'cookies': 'milk', 'lobster': 'lemonade'}
+```
+>>Here is an example of a set comprehension
+```python
+good_drinks = {d for d in drink_menu if d in drinks_i_like}
+print(good_drinks)
+```
 
 ### Complete the following problems by editing the files below:
 
