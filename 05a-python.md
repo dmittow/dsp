@@ -80,6 +80,12 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >>>print(prefs)
 ['yes', 'yes', 'no', 'no']
 ```
+>>Here is the same function implemented using *map*
+
+```python
+>>>print(list(map(do_i_like, menu, 4*[drinks_i_like])))
+['yes', 'yes', 'no', 'no']
+```
 
 ### Complete the following problems by editing the files below:
 
