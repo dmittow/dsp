@@ -87,6 +87,16 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 ['yes', 'yes', 'no', 'no']
 ```
 
+>>Here is an example of filtering implemented with list comprehension
+
+```python
+print([d for d in menu if (d in drinks_i_like)])
+```
+>>Here is the same thing using the filtering keyword
+```python
+print(list(filter(lambda d: d in drinks_i_like, menu)))
+```
+
 ### Complete the following problems by editing the files below:
 
 ### Q5. Datetime
