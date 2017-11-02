@@ -121,38 +121,15 @@ a.
 date_start = '01-02-2013'    
 date_stop = '07-28-2015'
 ```
->>Here is my solution
-```python
-import numpy  
-import pandas  
-from datetime import datetime as dt  
-from dateutil.parser import parse  
-  
-date_start = '01-02-2013'      
-date_stop = '07-28-2015'  
-
-diff = dt.date(dt.strptime(date_stop, '%m-%d-%Y')) - dt.date(dt.strptime(date_start, '%m-%d-%Y'))  
-print(diff)  
-
-937 days, 0:00:00
-```
+>>937 days, 0:00:00
 
 b.  
 ```
 date_start = '12312013'  
 date_stop = '05282015'  
 ```
+>> 513 days, 0:00:00
 
->> Here is my solution
-
-```python
-date_start_1 = '12312013'  
-date_stop_1 = '05282015' 
-
-diff_1 = dt.date(dt.strptime(date_stop_1, '%m%d%Y')) - dt.date(dt.strptime(date_start_1, '%m%d%Y'))
-print(diff_1)
-513 days, 0:00:00
-```
 
 
 c.  
@@ -161,7 +138,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850 days, 0:00:00
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
