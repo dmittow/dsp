@@ -24,17 +24,17 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Lists are ordered, and allow duplicates while sets do not. Sets are best for operations like 'IN', 'MINUS', and 'XOR'.
 ```python
-foods = {'cheese','chocolate','cookies','lobster'}
+foods_i_like = {'cheese','chocolate','cookies','lobster'}
 
-def do_i_like(s):
+def do_i_like(s, foods):
     like = 'no'
     if s in foods:
         like = 'yes'
     return like
     
->>>do_i_like('cheese')
+>>>do_i_like('cheese',foods_i_like)
 yes
->>>do_i_like('mushrooms')
+>>>do_i_like('mushrooms', foods_i_like)
 no
 ```    
 >>Adding items to sets is fast, and so is checking membership. Finding the index of an element in a SET is meaningless since the values are not ordered. 
@@ -122,7 +122,18 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> ```python
+import numpy
+import pandas
+from datetime import datetime as dt
+from dateutil.parser import parse
+
+date_start = '01-02-2013'    
+date_stop = '07-28-2015'
+
+diff = dt.date(dt.strptime(date_stop, '%m-%d-%Y')) - dt.date(dt.strptime(date_start, '%m-%d-%Y'))
+print(diff)
+```
 
 b.  
 ```
