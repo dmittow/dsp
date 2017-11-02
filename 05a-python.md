@@ -122,17 +122,17 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> ```python
-import numpy
-import pandas
-from datetime import datetime as dt
-from dateutil.parser import parse
+```python
+import numpy  
+import pandas  
+from datetime import datetime as dt  
+from dateutil.parser import parse  
+  
+date_start = '01-02-2013'      
+date_stop = '07-28-2015'  
 
-date_start = '01-02-2013'    
-date_stop = '07-28-2015'
-
-diff = dt.date(dt.strptime(date_stop, '%m-%d-%Y')) - dt.date(dt.strptime(date_start, '%m-%d-%Y'))
-print(diff)
+diff = dt.date(dt.strptime(date_stop, '%m-%d-%Y')) - dt.date(dt.strptime(date_start, '%m-%d-%Y'))  
+print(diff)  
 ```
 
 b.  
