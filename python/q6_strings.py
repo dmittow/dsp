@@ -3,11 +3,11 @@
 
 
 def donuts(count):
-    """
-    Given an int count of a number of donuts, return a string of the
-    form 'Number of donuts: <count>', where <count> is the number
-    passed in. However, if the count is 10 or more, then use the word
-    'many' instead of the actual count.
+    if count >= 10: 
+        cnt_str = 'many' 
+    else: 
+        cnt_str = str(count)
+    return 'Number of donuts: ' + cnt_str
 
     >>> donuts(4)
     'Number of donuts: 4'
@@ -17,8 +17,7 @@ def donuts(count):
     'Number of donuts: many'
     >>> donuts(99)
     'Number of donuts: many'
-    """
-    raise NotImplementedError
+
 
 
 def both_ends(s):
