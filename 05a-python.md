@@ -121,7 +121,7 @@ a.
 date_start = '01-02-2013'    
 date_stop = '07-28-2015'
 ```
-
+>>Here is my solution
 ```python
 import numpy  
 import pandas  
@@ -133,6 +133,8 @@ date_stop = '07-28-2015'
 
 diff = dt.date(dt.strptime(date_stop, '%m-%d-%Y')) - dt.date(dt.strptime(date_start, '%m-%d-%Y'))  
 print(diff)  
+
+937 days, 0:00:00
 ```
 
 b.  
@@ -141,7 +143,17 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> Here is my solution
+
+```python
+date_start_1 = '12312013'  
+date_stop_1 = '05282015' 
+
+diff_1 = dt.date(dt.strptime(date_stop_1, '%m%d%Y')) - dt.date(dt.strptime(date_start_1, '%m%d%Y'))
+print(diff_1)
+513 days, 0:00:00
+```
+
 
 c.  
 ```
