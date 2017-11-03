@@ -20,7 +20,8 @@ with open('faculty.csv','r') as f:
     deg_count_dict = {d:degrees.count(d) for d in degrees}
     title_count_dict = {t:titles.count(t) for t in titles}
     unique_domains = set(domains)
-
- print(deg_count_dict)
- print(title_count_dict)
- print(unique_domains)
+    
+print(deg_count_dict)
+print(title_count_dict)
+print(emails)
+print(unique_domains)
