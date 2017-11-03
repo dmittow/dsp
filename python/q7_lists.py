@@ -11,7 +11,6 @@ def match_ends(words):
     return len(match_words)
    
 
-    raise NotImplementedError
 
 #     Given a list of strings, return a list with the strings in sorted
 #     order, except group all the strings that begin with 'x' first.
