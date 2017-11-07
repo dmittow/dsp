@@ -1,5 +1,9 @@
+##start with code from previous exercise
+
 import csv
 import re
+import sys
+import subprocess
 
 with open('faculty.csv','r') as f: 
     f_reader = csv.reader(f)
@@ -21,7 +25,14 @@ with open('faculty.csv','r') as f:
     title_count_dict = {t:titles.count(t) for t in titles}
     unique_domains = set(domains)
     
-print(deg_count_dict)
-print(title_count_dict)
-print(emails)
-print(unique_domains)
+## add code to write to csv
+
+with open('emails.csv', 'w', newline = '') as csvfile:
+    emailwriter = csv.writer(csvfile, delimiter = '\n')
+    emailwriter.writerow(emails)
+    
+## add code to execute the git commands to check-in emails.csv to the repository
+
+subprocess.run(["git", "add","emails.csv"], shell=True)
+subprocess.run(["git","commit","-m", '\"automated commit\"'], shell=True)
+subprocess.run(["git","push"], shell=True)
